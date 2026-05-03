@@ -2,7 +2,7 @@
 
 **BSPaste** adalah aplikasi web manajemen catatan (pastebin-style) yang aman, modern, dan sepenuhnya modular. Dibangun menggunakan PHP native dengan integrasi keamanan tinggi, sistem audit log, dan antarmuka pengguna yang sangat fleksibel (berbasis SB Admin 2).
 
-![BSPaste Preview](https://via.placeholder.com/1200x600?text=BSPaste+Dashboard+Preview)
+![BSPaste Preview](https://github.com/user-attachments/assets/a950fb7c-5cbb-4f04-97c9-a5a627b4cf35)
 
 ---
 

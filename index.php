@@ -180,13 +180,10 @@ if ($row_latest = mysqli_fetch_assoc($result_latest)) {
                                 </div>
                                 <div class="card-body">
                                     <div class="text-center mb-4">
-                                        <i class="fas fa-user-shield fa-5x text-primary"></i>
+                                        <i class="fas fa-shield-alt fa-5x text-primary"></i>
                                     </div>
-                                    <p>Kami sangat serius menjaga privasi Anda. Setiap catatan yang Anda simpan akan
-                                        dienkripsi menggunakan standar militer **AES-128-CBC** sebelum masuk ke database
-                                        kami.</p>
-                                    <p class="mb-0">Bahkan administrator database pun tidak bisa membaca isi catatan
-                                        Anda tanpa kunci enkripsi yang tepat.</p>
+                                    <p>Kami menerapkan arsitektur <strong>Hybrid Vault (Zero-Knowledge)</strong> untuk privasi total. Setiap catatan dienkripsi menggunakan <strong>Master Vault Key (AES-256-CBC)</strong> yang unik untuk Anda.</p>
+                                    <p class="mb-0 small text-gray-600">Hanya Anda yang memegang kunci akses melalui password atau Kunci Pemulihan. Bahkan administrator sistem pun tidak memiliki cara untuk membaca isi catatan Anda.</p>
                                 </div>
                             </div>
                         </div>

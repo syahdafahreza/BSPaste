@@ -1,0 +1,21 @@
+RewriteEngine On
+
+# 1. Redirect /auth/index.php to /auth/
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /auth/index\.php\ HTTP/
+RewriteRule ^auth/index\.php$ /auth/ [R=301,L]
+
+# 2. Redirect /index.php to /
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+RewriteRule ^index\.php$ / [R=301,L]
+
+# 3. Hide .php extension: Redirect /page.php to /page
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^\ ]+)\.php
+RewriteRule ^([^\ ]+)\.php$ /$1 [R=301,L]
+
+# 4. Internal mapping: Map /page to /page.php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# 5. Ensure DirectoryIndex works
+DirectoryIndex index.php
